@@ -8,8 +8,13 @@ public class Problem_1 : MonoBehaviour
     */
     void Start()
     {
-        int[] parts = new int[10] { 12, 3, 4234, 123, 325453141, 123, 123213, 1, 4, 32 };
+        int[] parts = { 12, 3, 4234, 123, 325453141, 123, 123213, 1, 4, 32 };
         int sum = 0;
+        for (int swag = 0; swag < parts.Length; swag++)
+        {
+            sum += parts[swag];
+        }
+        print(sum);
     }
 }
 
